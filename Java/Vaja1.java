@@ -1,9 +1,18 @@
+package car4;
+
 public class Vaja1 {
 	public static void main(String[] args){
 		Cas zdaj = new Cas(9, 5);
 		System.out.println(((zdaj.getUra() > 9) ? (zdaj.getUra()):("0"+zdaj.getUra())) + ":" + ((zdaj.getMin() > 9) ? (zdaj.getMin()):("0"+zdaj.getMin())));
 		zdaj.izpis();
 		System.out.println(zdaj);
+		
+		Cas potem = new Cas();
+		potem.setUra(9);
+		potem.setMin(30);
+		System.out.println(((potem.getUra() > 9) ? (potem.getUra()):("0"+potem.getUra())) + ":" + ((potem.getMin() > 9) ? (potem.getMin()):("0"+potem.getMin())));
+		potem.izpis();
+		System.out.println(potem);
 	}
 }
 
