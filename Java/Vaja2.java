@@ -14,7 +14,7 @@ public class Vaja2 {
 		//e.izpis();
 		
 		e.deleteID(4);
-		e.setDijak(new Dijak("b", "v", randomVpis()));
+		e.setDijak(new Dijak("Test", "Test", randomVpis()));
 		e.izpis();
 	}
 	
