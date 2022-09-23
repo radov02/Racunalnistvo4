@@ -39,7 +39,9 @@ public class WriteReadFile {
 
     public static void writeLine(File file, String line) throws IOException{
         BufferedWriter bw = new BufferedWriter(new FileWriter(file, true)); // true - dodaj na koncu datoteke, false = overwrite
-        bw.write(line + "\n");
+        bw.write(line);
+        bw.newLine();
+        // ali bw.write(line + "\r\n");
         bw.close();
     }
     public static ArrayList<String> read(File file) throws IOException{
